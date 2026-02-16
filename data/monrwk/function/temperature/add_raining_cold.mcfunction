@@ -1,0 +1,1 @@
+execute as @s at @s if predicate monrwk:is_raining if predicate monrwk:can_see_sky run scoreboard players operation @s temperatureLevel -= snowingCoolPts monrwk_data

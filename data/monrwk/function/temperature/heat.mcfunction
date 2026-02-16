@@ -1,0 +1,1 @@
+execute if score @s temperatureLevel matches ..1000 run scoreboard players operation @s temperatureLevel += heatPoints monrwk_data
