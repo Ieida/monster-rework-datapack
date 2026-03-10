@@ -6,11 +6,12 @@ scoreboard objectives add monrwk_data dummy
 scoreboard objectives add drank minecraft.used:minecraft.potion
 scoreboard objectives add waterLevel dummy
 scoreboard objectives add temperatureLevel dummy
+scoreboard objectives add initd_players dummy
 # Variables ----
 execute unless score fs monrwk_data = fs monrwk_data run scoreboard players set fs monrwk_data 0
 execute unless score drinkPoints monrwk_data = drinkPoints monrwk_data run scoreboard players set drinkPoints monrwk_data 8
 execute unless score thirstPoints monrwk_data = thirstPoints monrwk_data run scoreboard players set thirstPoints monrwk_data 1
-execute unless score thirstTicks monrwk_data = thirstTicks monrwk_data run scoreboard players set thirstTicks monrwk_data 30
+execute unless score thirstTicks monrwk_data = thirstTicks monrwk_data run scoreboard players set thirstTicks monrwk_data 120
 execute unless score thirstElapsedTicks monrwk_data = thirstElapsedTicks monrwk_data run scoreboard players set thirstElapsedTicks monrwk_data 0
 execute unless score hudTicksElapsed monrwk_data = hudTicksElapsed monrwk_data run scoreboard players set hudTicksElapsed monrwk_data 0
 execute unless score hudMode monrwk_data = hudMode monrwk_data run scoreboard players set hudMode monrwk_data 0
@@ -20,8 +21,8 @@ execute unless score coolPoints monrwk_data = coolPoints monrwk_data run scorebo
 execute unless score heatPoints monrwk_data = heatPoints monrwk_data run scoreboard players set heatPoints monrwk_data 1
 execute unless score campfireHeatPts monrwk_data = campfireHeatPts monrwk_data run scoreboard players set campfireHeatPts monrwk_data 8
 execute unless score torchHeatPts monrwk_data = torchHeatPts monrwk_data run scoreboard players set torchHeatPts monrwk_data 1
+execute unless score furnaceHeatPts monrwk_data = furnaceHeatPts monrwk_data run scoreboard players set furnaceHeatPts monrwk_data 4
 execute unless score snowingCoolPts monrwk_data = snowingCoolPts monrwk_data run scoreboard players set snowingCoolPts monrwk_data 12
-execute as @a run function monrwk:init_player_vars
 # Tags ----
 tag @e remove cavespiderbuff
 tag @e remove spiderbuff

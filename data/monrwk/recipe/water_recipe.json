@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "ingredient": "minecraft:potion",
+  "result": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:item_model": "monrwk:water",
+      "minecraft:custom_data": "{water:true}",
+      "minecraft:custom_name": "Clean Water"
+    }
+  },
+  "experience": 1,
+  "cookingtime": 800
+}
